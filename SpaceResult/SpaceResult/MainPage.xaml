@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpaceResult.MainPage"
+             BackgroundColor="MintCream">
+
+    <StackLayout>
+        <Button x:Name="StartButton"
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" 
+                CornerRadius="300" 
+                BorderColor="Orange"
+                BorderWidth="1"
+                BackgroundColor="MintCream"
+                HeightRequest="300"
+                WidthRequest="300"
+                Clicked="ClickStart"
+                Text="Нажмите для старта"
+                TextColor="Orange"
+                Font="15" />
+
+       
+
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+            <Button x:Name="ShowResult"
+                Text="Показать результаты"
+                VerticalOptions="End" 
+                CornerRadius="300"
+                    HorizontalOptions="FillAndExpand"
+                BorderColor="DeepSkyBlue"
+                BorderWidth="1"
+                BackgroundColor="MintCream"
+                TextColor="DeepSkyBlue"
+                IsVisible="false"
+                Clicked="ClickShowResult"/>
+
+           
+
+            <Button x:Name="Reset"
+                    Text="Reset"
+                    VerticalOptions="End" 
+                    HorizontalOptions="FillAndExpand"
+                    CornerRadius="300"
+                    BorderColor="DarkRed"
+                    BorderWidth="1"
+                    BackgroundColor="MintCream"
+                    TextColor="DarkRed" 
+                    Clicked="ClickReset"/>
+        </StackLayout>
+        <Label x:Name="Real" 
+               FontSize="25"/>
+    </StackLayout>
+
+</ContentPage>
